@@ -1,0 +1,118 @@
+.header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: white;
+}
+
+.inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.2px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link {
+    color: rgba(0, 0, 0, 0.72);
+    text-decoration: none;
+    font-weight: 650;
+    padding: 8px 10px;
+    border-radius: 12px;
+}
+
+.link:hover {
+    background: rgba(0, 0, 0, 0.06);
+    color: rgba(0, 0, 0, 0.92);
+}
+
+.active {
+    background: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.95);
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 750;
+    padding: 9px 12px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.14);
+}
+
+.primary {
+    background: black;
+    color: white;
+    border-color: black;
+}
+
+.ghost {
+    background: white;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdownButton {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+}
+
+.caret {
+    margin-left: 6px;
+    font-size: 0.9em;
+}
+
+.menu {
+    position: absolute;
+    top: 42px;
+    left: 0;
+    min-width: 180px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    border-radius: 14px;
+    padding: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.menuItem {
+    display: block;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.80);
+    font-weight: 650;
+}
+
+.menuItem:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
