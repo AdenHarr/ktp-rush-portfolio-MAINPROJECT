@@ -16,7 +16,6 @@ export default function App() {
                     <Route path="/rush" element={<Rush />} />
                     <Route path="/contact" element={<Contact />} />
 
-                    {/* Placeholder routes for dropdown */}
                     <Route path="/rush/schedule" element={<h1>Rush Schedule</h1>} />
                     <Route path="/rush/events" element={<h1>Rush Events</h1>} />
                     <Route path="/rush/faq" element={<h1>Rush FAQ</h1>} />
