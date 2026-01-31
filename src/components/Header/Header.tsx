@@ -21,7 +21,6 @@ export default function Header() {
     const [rushOpen, setRushOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement | null>(null);
 
-    // Close dropdown when clicking outside
     useEffect(() => {
         function onDocClick(e: MouseEvent) {
             if (!dropdownRef.current) return;
@@ -36,14 +35,14 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.inner}>
-                {/* LEFT GROUP: logo */}
+               
                 <div className={styles.left}>
                     <NavLink to="/" className={styles.logo}>
                         Aden's KTP Rush Site
                     </NavLink>
                 </div>
 
-                {/* MIDDLE GROUP: main nav */}
+                
                 <nav className={styles.nav} aria-label="Primary">
                     <NavLink
                         to="/"
@@ -64,7 +63,7 @@ export default function Header() {
                         Portfolio
                     </NavLink>
 
-                    {/* DROPDOWN SUBGROUP */}
+                  
                     <div className={styles.dropdown} ref={dropdownRef}>
                         <button
                             type="button"
@@ -103,7 +102,7 @@ export default function Header() {
                     </NavLink>
                 </nav>
 
-                {/* RIGHT GROUP: CTAs */}
+              
                 <div className={styles.right}>
                     <a className={classNames(styles.btn, styles.primary)} href="#apply">
                         Apply
